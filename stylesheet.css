@@ -1,0 +1,159 @@
+@media (max-width: 1023px) {
+  #titlediv {
+    padding-top: 200px;
+    padding-right: 400px;
+    padding-bottom: 600px;
+    padding-left: 400px;
+  }
+
+  #aboutmediv {
+    padding-top: 100px;
+    padding-right: 400px;
+    padding-bottom: 100px;
+    padding-left: 400px;
+  }
+
+  #projectdiv {
+    padding-top: 100px;
+    padding-right: 400px;
+    padding-bottom: 50px;
+    padding-left: 400px;
+  }
+
+  #contactdiv {
+    padding-top: 100px;
+    padding-right: 400px;
+    padding-bottom: 40px;
+    padding-left: 400px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #titlediv {
+    padding-top: 200px;
+    padding-right: 400px;
+    padding-bottom: 600px;
+    padding-left: 400px;
+  }
+
+  #aboutmediv {
+    padding-top: 100px;
+    padding-right: 400px;
+    padding-bottom: 400px;
+    padding-left: 400px;
+  }
+
+  #projectdiv {
+    padding-top: 100px;
+    padding-right: 400px;
+    padding-bottom: 400px;
+    padding-left: 400px;
+  }
+
+  #contactdiv {
+    padding-top: 100px;
+    padding-right: 400px;
+    padding-bottom: 40px;
+    padding-left: 400px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #3d518c;
+}
+
+h1 {
+  color: #abd2fa;
+}
+
+#navbartext {
+  color: #abd2fa;
+  font-size: 110%;
+  transition: 0.3s;
+}
+
+#navbartext:hover {
+  background-color: #3d518c;
+  color: #091540;
+  transition: 0.3s;
+}
+
+#navbartext:active {
+  background-color: #3d518c;
+}
+
+#navbartext:visited {
+  background-color: #3d518c;
+}
+
+#text {
+  color: #abd2fa;
+}
+
+#centeredtext {
+  color: #abd2fa;
+  text-align: center;
+}
+
+#cardtext {
+  color: #abd2fa;
+  transition: 0.3s;
+}
+
+#cardtext:hover {
+  color: #3d518c;
+  transition: 0.3s;
+}
+
+#mainbuttons {
+  background-color: #091540;
+  border-color: #091540;
+  transition: 0.3s;
+}
+
+#mainbuttons:hover {
+  background-color: #1b2cc1;
+  border-color: #1b2cc1;
+  transition: 0.3s;
+}
+
+.navbar {
+  background-color: transparent;
+}
+
+#maintitle {
+  font-size: 700%;
+  color: #abd2fa;
+}
+
+#navbarstart {
+  padding-left: 50px;
+}
+
+#navbarend {
+  padding-right: 50px;
+}
+
+#profile {
+  float: right;
+  padding-right: 50px;
+}
+
+.card {
+  background-color: #091540;
+  width: 350px;
+}
+
+th,
+td {
+  padding: 20px;
+}
+
+#profile {
+  float: left;
+  margin: 30px 12px 3px 4px;
+}

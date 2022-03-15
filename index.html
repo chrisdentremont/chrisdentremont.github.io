@@ -1,0 +1,197 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chris D'Entremont</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body>
+    <nav class="navbar" role="navigation">
+      <div class="navbar-brand">
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div class="navbar-menu">
+        <div class="navbar-start" id="navbarstart">
+          <a id="navbartext" href="#aboutmediv" class="navbar-item">About Me</a>
+          <a id="navbartext" href="#projectdiv" class="navbar-item">Projects</a>
+          <a id="navbartext" href="#contactdiv" class="navbar-item">Contact</a>
+        </div>
+        <div class="navbar-end" id="navbarend">
+          <a
+            href="resume.pdf"
+            class="navbar-item"
+            target="_blank"
+            id="navbartext"
+          >
+            Resume
+          </a>
+          <a
+            href="https://github.com/dentremontcatwit"
+            target="_blank"
+            class="navbar-item"
+            id="navbartext"
+          >
+            GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/chrisdentremont/"
+            class="navbar-item"
+            target="_blank"
+            id="navbartext"
+          >
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div id="titlediv">
+      <h1 id="maintitle" class="title is-1">I'm Chris,</h1>
+      <p id="text" class="subtitle is-3">
+        a Junior Computer Science student currently studying at Wentworth
+        Institute of Technology.
+      </p>
+      <p class="buttons">
+        <a
+          id="mainbuttons"
+          href="resume.pdf"
+          target="_blank"
+          class="button is-danger is-medium"
+          >Resume</a
+        >
+      </p>
+    </div>
+
+    <div id="aboutmediv">
+      <h1 id="text" class="title is-2">About Me</h1>
+      <p id="text" class="subtitle is-5">
+        <img
+          src="profile.jpg"
+          id="profile"
+          height="200"
+          width="400"
+          alt="Chris D'Entremont"
+        />
+        <br />Hello! My name is Chris D'Entremont, and I currently attend
+        Wentworth Institute of Technology as a Computer Science major with a
+        minor in Business Management. I attended Malden High School in my
+        hometown of Malden, Massachusetts in which I took Computer Science
+        courses that sparked my ambition to become a programmer. I've always
+        been interested in computers and technology ever since I was a kid, and
+        my dream is to turn that passion into a living. I am a very driven and
+        cooperative individual who loves a great challenge. I want to be able to
+        work with a great team of people and be able to bring my skillset to the
+        table in order to bring success to the team. I look forward to working
+        with you!
+      </p>
+    </div>
+
+    <div id="projectdiv">
+      <h1 id="text" class="title is-2">Projects</h1>
+      <table>
+        <tr>
+          <td>
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title is-centered" id="text">
+                  Plastic Pollution Predictor
+                </p>
+              </header>
+              <div class="card-content" id="text">
+                A project that uses machine learning to predict global plastic
+                pollution given existing datasets.
+              </div>
+              <footer class="card-footer">
+                <a
+                  href="https://plastic-pollution-predictor.herokuapp.com/"
+                  target="_blank"
+                  class="card-footer-item"
+                  id="cardtext"
+                  >See Project</a
+                >
+                <a
+                  href="https://github.com/dentremontcatwit/plasticpollution"
+                  target="_blank"
+                  class="card-footer-item"
+                  id="cardtext"
+                  >Source Code</a
+                >
+              </footer>
+            </div>
+          </td>
+          <td>
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title is-centered" id="text">
+                  Online Trivia Game
+                </p>
+              </header>
+              <div class="card-content" id="text">
+                An online trivia game created to demonstrate skills learned in
+                Networking Programming CS class.
+              </div>
+              <footer class="card-footer">
+                <a
+                  href="https://github.com/madeiragatwit/TriviaDuelProject"
+                  target="_blank"
+                  class="card-footer-item"
+                  id="cardtext"
+                  >Source Code</a
+                >
+              </footer>
+            </div>
+          </td>
+          <td>
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title is-centered" id="text">
+                  Space Shooter Game
+                </p>
+              </header>
+              <div class="card-content" id="text">
+                A space shooter game created in C# using the Unity game engine.
+              </div>
+              <footer class="card-footer">
+                <a
+                  href="https://simmer.io/@cdentre19/bloomfer-brawl"
+                  target="_blank"
+                  class="card-footer-item"
+                  id="cardtext"
+                  >See Project</a
+                >
+              </footer>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="contactdiv">
+      <h1 id="centeredtext" class="title is-2">Want to get in touch?</h1>
+      <p class="buttons is-centered">
+        <a
+          id="mainbuttons"
+          href="mailto:dentremontc@wit.edu"
+          target="_blank"
+          class="button is-danger is-medium"
+          >Contact Me</a
+        >
+      </p>
+    </div>
+  </body>
+</html>
