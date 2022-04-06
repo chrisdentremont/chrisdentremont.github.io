@@ -68,6 +68,7 @@
   td {
     padding: 2%;
     display: block;
+    box-sizing: border-box;
   }
 }
 
