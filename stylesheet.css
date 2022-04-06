@@ -7,6 +7,12 @@ body {
   overflow-x: hidden;
 }
 
+th,
+td {
+  padding: 20px;
+  display: block;
+}
+
 @media (max-width: 1023px) {
   #titlediv {
     padding-top: 20px;
@@ -112,12 +118,6 @@ body {
   .card {
     background-color: #091540;
     width: 100%;
-  }
-
-  th,
-  td {
-    padding: 20px;
-    display: block;
   }
 
   #profile {
@@ -231,11 +231,6 @@ body {
   .card {
     background-color: #091540;
     width: 100%;
-  }
-
-  th,
-  td {
-    padding: 20px;
   }
 
   #profile {
