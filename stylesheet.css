@@ -1,30 +1,12 @@
 @media (max-width: 1023px) {
-  #titlediv {
-    padding-top: 20px;
-    padding-right: 40px;
-    padding-bottom: 60px;
-    padding-left: 40px;
-  }
-
-  #aboutmediv {
-    padding-top: 10px;
-    padding-right: 40px;
-    padding-bottom: 10px;
-    padding-left: 40px;
-  }
-
-  #projectdiv {
-    padding-top: 10px;
-    padding-right: 40px;
-    padding-bottom: 10px;
-    padding-left: 40px;
-  }
-
+  #titlediv,
+  #aboutmediv,
+  #projectdiv,
   #contactdiv {
-    padding-top: 10px;
-    padding-right: 40px;
-    padding-bottom: 0px;
-    padding-left: 40px;
+    padding-top: 10%;
+    padding-right: 20%;
+    padding-bottom: 5%;
+    padding-left: 20%;
   }
 
   #navbartext {
@@ -39,10 +21,7 @@
     transition: 0.3s;
   }
 
-  #navbartext:active {
-    background-color: #3d518c;
-  }
-
+  #navbartext:active,
   #navbartext:visited {
     background-color: #3d518c;
   }
@@ -112,38 +91,20 @@
 
   th,
   td {
-    padding: 20px;
+    padding: 2%;
     display: block;
   }
 }
 
 @media (min-width: 1024px) {
-  #titlediv {
-    padding-top: 200px;
-    padding-right: 400px;
-    padding-bottom: 300px;
-    padding-left: 400px;
-  }
-
-  #aboutmediv {
-    padding-top: 30px;
-    padding-right: 400px;
-    padding-bottom: 200px;
-    padding-left: 400px;
-  }
-
-  #projectdiv {
-    padding-top: 30px;
-    padding-right: 400px;
-    padding-bottom: 200px;
-    padding-left: 400px;
-  }
-
+  #titlediv,
+  #aboutmediv,
+  #projectdiv,
   #contactdiv {
-    padding-top: 30px;
-    padding-right: 400px;
-    padding-bottom: 40px;
-    padding-left: 400px;
+    padding-top: 10%;
+    padding-right: 20%;
+    padding-bottom: 5%;
+    padding-left: 20%;
   }
 
   #navbartext {
@@ -158,10 +119,7 @@
     transition: 0.3s;
   }
 
-  #navbartext:active {
-    background-color: #3d518c;
-  }
-
+  #navbartext:active,
   #navbartext:visited {
     background-color: #3d518c;
   }
@@ -231,7 +189,7 @@
 
   th,
   td {
-    padding: 20px;
+    padding: 2%;
   }
 }
 
