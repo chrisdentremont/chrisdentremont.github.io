@@ -4,26 +4,9 @@
   #projectdiv,
   #contactdiv {
     padding-top: 10%;
-    padding-right: 20%;
+    padding-right: 15%;
     padding-bottom: 5%;
-    padding-left: 20%;
-  }
-
-  #navbartext {
-    color: #abd2fa;
-    font-size: 110%;
-    transition: 0.3s;
-  }
-
-  #navbartext:hover {
-    background-color: #3d518c;
-    color: #091540;
-    transition: 0.3s;
-  }
-
-  #navbartext:active,
-  #navbartext:visited {
-    background-color: #3d518c;
+    padding-left: 15%;
   }
 
   #text {
@@ -66,14 +49,6 @@
     color: #abd2fa;
   }
 
-  #navbarstart {
-    padding-left: 50px;
-  }
-
-  #navbarend {
-    padding-right: 50px;
-  }
-
   #profile {
     float: right;
     padding-right: 50px;
@@ -86,7 +61,7 @@
 
   #profile {
     float: left;
-    margin: 30px 12px 3px 4px;
+    margin: 15% 6% 1% 2%;
   }
 
   th,
@@ -165,16 +140,11 @@
   }
 
   #navbarstart {
-    padding-left: 50px;
+    padding-left: 5%;
   }
 
   #navbarend {
-    padding-right: 50px;
-  }
-
-  #profile {
-    float: right;
-    padding-right: 50px;
+    padding-right: 5%;
   }
 
   .card {
@@ -184,7 +154,7 @@
 
   #profile {
     float: left;
-    margin: 30px 12px 3px 4px;
+    margin: 2% 6% 1% 2%;
   }
 
   th,
