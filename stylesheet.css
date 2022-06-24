@@ -1,3 +1,42 @@
+#mainbuttons {
+  background-color: #091540;
+  border-color: #091540;
+  transition: 0.3s;
+}
+
+#mainbuttons:hover {
+  background-color: #1b2cc1;
+  border-color: #1b2cc1;
+  transition: 0.3s;
+}
+
+#mainbuttons:focus{
+  border-color: #1b2cc1;
+}
+
+#text {
+  color: #abd2fa;
+}
+
+#centeredtext {
+  color: #abd2fa;
+  text-align: center;
+}
+
+#cardtext {
+  color: #abd2fa;
+  transition: 0.3s;
+}
+
+#cardtext:hover {
+  color: #3d518c;
+  transition: 0.3s;
+}
+
+.navbar {
+  background-color: transparent;
+}
+
 @media (max-width: 1023px) {
   #titlediv,
   #aboutmediv,
@@ -8,41 +47,6 @@
     padding-bottom: 5%;
     padding-left: 15%;
     box-sizing: border-box;
-  }
-
-  #text {
-    color: #abd2fa;
-  }
-
-  #centeredtext {
-    color: #abd2fa;
-    text-align: center;
-  }
-
-  #cardtext {
-    color: #abd2fa;
-    transition: 0.3s;
-  }
-
-  #cardtext:hover {
-    color: #3d518c;
-    transition: 0.3s;
-  }
-
-  #mainbuttons {
-    background-color: #091540;
-    border-color: #091540;
-    transition: 0.3s;
-  }
-
-  #mainbuttons:hover {
-    background-color: #1b2cc1;
-    border-color: #1b2cc1;
-    transition: 0.3s;
-  }
-
-  .navbar {
-    background-color: transparent;
   }
 
   #maintitle {
@@ -99,41 +103,6 @@
   #navbartext:active,
   #navbartext:visited {
     background-color: #3d518c;
-  }
-
-  #text {
-    color: #abd2fa;
-  }
-
-  #centeredtext {
-    color: #abd2fa;
-    text-align: center;
-  }
-
-  #cardtext {
-    color: #abd2fa;
-    transition: 0.3s;
-  }
-
-  #cardtext:hover {
-    color: #3d518c;
-    transition: 0.3s;
-  }
-
-  #mainbuttons {
-    background-color: #091540;
-    border-color: #091540;
-    transition: 0.3s;
-  }
-
-  #mainbuttons:hover {
-    background-color: #1b2cc1;
-    border-color: #1b2cc1;
-    transition: 0.3s;
-  }
-
-  .navbar {
-    background-color: transparent;
   }
 
   #maintitle {
