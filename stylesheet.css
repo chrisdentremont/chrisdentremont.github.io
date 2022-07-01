@@ -1,10 +1,39 @@
+.button {
+  color: white;
+}
+
+.button:hover {
+  color: white;
+}
+
+.button:visited {
+  color: white;
+}
+
 #mainbuttons {
+  background-color: #091540;
+  border-color: #091540;
+  color: white;
+  transition: 0.3s;
+}
+
+#mainbuttons:hover {
+  background-color: #1b2cc1;
+  border-color: #1b2cc1;
+  color: white;
+  transition: 0.3s;
+}
+
+#projectbuttons {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #091540;
   border-color: #091540;
   transition: 0.3s;
 }
 
-#mainbuttons:hover {
+#projectbuttons:hover {
   background-color: #1b2cc1;
   border-color: #1b2cc1;
   transition: 0.3s;
@@ -16,6 +45,18 @@
 
 #text {
   color: #abd2fa;
+}
+
+#plasticlink, #trivialink, #spacelink, #applilink {
+  color: #abd2fa;
+}
+
+.project {
+  display: inline-block;
+}
+
+.is-parent .is-child {
+  background-color: #091540;
 }
 
 #centeredtext {
@@ -40,12 +81,19 @@
 @media (max-width: 1023px) {
   #titlediv,
   #aboutmediv,
-  #projectdiv,
   #contactdiv {
     padding-top: 10%;
     padding-right: 15%;
     padding-bottom: 5%;
     padding-left: 15%;
+    box-sizing: border-box;
+  }
+
+  #projectdiv {
+    padding-top: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    padding-left: 10%;
     box-sizing: border-box;
   }
 
@@ -80,12 +128,18 @@
 @media (min-width: 1024px) {
   #titlediv,
   #aboutmediv,
-  #projectdiv,
   #contactdiv {
     padding-top: 10%;
     padding-right: 20%;
     padding-bottom: 5%;
     padding-left: 20%;
+  }
+
+  #projectdiv {
+    padding-top: 10%;
+    padding-right: 15%;
+    padding-bottom: 5%;
+    padding-left: 15%;
   }
 
   #navbartext {
