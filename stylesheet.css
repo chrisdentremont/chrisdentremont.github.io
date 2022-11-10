@@ -1,3 +1,25 @@
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+  background-color: #304b3f;
+  background-image: url("squiggly2.svg");
+}
+
+.sidebar {
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  margin: 0;
+  position: fixed;
+  top: 30%;
+  margin-left: 2%;
+}
+
 .button {
   color: white;
 }
@@ -11,15 +33,15 @@
 }
 
 #mainbuttons {
-  background-color: #091540;
-  border-color: #091540;
+  background-color: #20322a;
+  border-color: #20322a;
   color: white;
   transition: 0.3s;
 }
 
 #mainbuttons:hover {
-  background-color: #1b2cc1;
-  border-color: #1b2cc1;
+  background-color: #101b16;
+  border-color: #101b16;
   color: white;
   transition: 0.3s;
 }
@@ -28,27 +50,54 @@
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
-  background-color: #091540;
-  border-color: #091540;
+  background-color: #20322a;
+  border-color: #20322a;
   transition: 0.3s;
 }
 
 #projectbuttons:hover {
-  background-color: #1b2cc1;
-  border-color: #1b2cc1;
+  background-color: #101b16;
+  border-color: #101b16;
   transition: 0.3s;
 }
 
-#mainbuttons:focus{
+#mainbuttons:focus {
   border-color: #1b2cc1;
 }
 
 #text {
-  color: #abd2fa;
+  color: #fffdd0;
+  font-family: brother-1816-printed, sans-serif;
+
+  font-weight: 400;
+
+  font-style: normal;
 }
 
-#plasticlink, #trivialink, #spacelink, #applilink {
-  color: #abd2fa;
+.subtitle {
+  color: #fffdd0;
+  font-family: brother-1816-printed-light, sans-serif;
+
+  font-weight: 400;
+
+  font-style: italic;
+}
+
+#descriptiontext {
+  color: #fffdd0;
+
+  font-size: large;
+
+  font-family: brother-1816-printed, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+#plasticlink,
+#trivialink,
+#spacelink,
+#applilink {
+  color: #fffdd0;
 }
 
 .project {
@@ -56,22 +105,12 @@
 }
 
 .is-parent .is-child {
-  background-color: #091540;
+  background-color: #20322a;
 }
 
 #centeredtext {
-  color: #abd2fa;
+  color: #fffdd0;
   text-align: center;
-}
-
-#cardtext {
-  color: #abd2fa;
-  transition: 0.3s;
-}
-
-#cardtext:hover {
-  color: #3d518c;
-  transition: 0.3s;
 }
 
 .navbar {
@@ -79,14 +118,18 @@
 }
 
 @media (max-width: 1023px) {
-  #titlediv,
-  #aboutmediv,
-  #contactdiv {
+  .infodiv {
     padding-top: 10%;
-    padding-right: 15%;
+    padding-right: 20%;
     padding-bottom: 5%;
-    padding-left: 15%;
-    box-sizing: border-box;
+    padding-left: 20%;
+  }
+
+  .gamediv {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 
   #projectdiv {
@@ -99,17 +142,12 @@
 
   #maintitle {
     font-size: relative-size;
-    color: #abd2fa;
+    color: #fffdd0;
   }
 
   #profile {
     float: right;
     padding-right: 50px;
-  }
-
-  .card {
-    background-color: #091540;
-    width: 100%;
   }
 
   #profile {
@@ -126,42 +164,40 @@
 }
 
 @media (min-width: 1024px) {
-  #titlediv,
-  #aboutmediv,
-  #contactdiv {
+  .infodiv {
     padding-top: 10%;
     padding-right: 20%;
     padding-bottom: 5%;
     padding-left: 20%;
   }
 
-  #projectdiv {
-    padding-top: 10%;
-    padding-right: 15%;
-    padding-bottom: 5%;
-    padding-left: 15%;
+  .gamediv {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 
   #navbartext {
-    color: #abd2fa;
+    color: #fffdd0;
     font-size: 110%;
     transition: 0.3s;
   }
 
   #navbartext:hover {
-    background-color: #3d518c;
-    color: #091540;
+    background-color: transparent;
+    text-decoration: underline;
     transition: 0.3s;
   }
 
   #navbartext:active,
   #navbartext:visited {
-    background-color: #3d518c;
+    background-color: #20322a;
   }
 
   #maintitle {
     font-size: 700%;
-    color: #abd2fa;
+    color: #fffdd0;
   }
 
   #navbarstart {
@@ -170,10 +206,6 @@
 
   #navbarend {
     padding-right: 5%;
-  }
-
-  .card {
-    background-color: #091540;
   }
 
   #profile {
@@ -187,16 +219,10 @@
   }
 }
 
-html {
-  scroll-behavior: smooth;
-  width: 100%;
-  height: 100%;
-}
-
-body {
-  background-color: #3d518c;
-}
-
 h1 {
-  color: #abd2fa;
+  color: #fffdd0;
+}
+
+article:hover {
+  outline: 5px solid #fffdd0;
 }
