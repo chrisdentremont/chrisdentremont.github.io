@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700&family=Noto+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+:root {
+  --textColor1: #35af9f;
+  --textColor2: #c2dfe3;
+  --textHoverColor: #e0fbfc;
+  --highlightColor: #3a928e;
+  --highlightHoverColor: #2c7773;
+  --cardColor: #224763;
+  --backgroundColor: #062136;
+}
+
+/*#region Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--backgroundColor);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--highlightColor);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--highlightHoverColor);
+}
+/*#endregion Scrollbar */
+
+body {
+  background-color: var(--backgroundColor);
+}
+
+.links {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin-left: 2%;
+  margin-bottom: 2%;
+  writing-mode: tb-rl;
+  color: var(--highlightColor);
+  font-family: "Inconsolata", monospace;
+}
+
+.links-right {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-left: 2%;
+  margin-bottom: 2%;
+  writing-mode: tb-rl;
+  color: var(--highlightColor);
+  font-family: "Inconsolata", monospace;
+}
+
+.links .icon-link {
+  font-size: 32px;
+  color: var(--highlightColor);
+  padding: 10px;
+  transition: transform 0.3s;
+}
+
+.links .icon-link:hover {
+  cursor: pointer;
+  color: var(--highlightHoverColor);
+  transform: translateX(20%);
+}
+
+.links-right .icon-link {
+  font-size: 24px;
+  color: var(--highlightColor);
+  padding: 10px;
+  transition: transform 0.3s;
+  text-decoration: none;
+}
+
+.links-right .icon-link:hover {
+  cursor: pointer;
+  color: var(--highlightHoverColor);
+  transform: translateX(-20%);
+}
+
+/*#region Navbar*/
+
+.navbar {
+  background-color: var(--backgroundColor);
+}
+
+.navbar-shadow {
+  box-shadow: var(--highlightColor) 0px 1px 2px 0px;
+}
+
+.nav-link:link {
+  color: var(--textColor2);
+  font-size: 20px;
+  font-family: "Inconsolata", monospace;
+  text-align: center;
+}
+
+.nav-link:visited {
+  color: var(--textColor2);
+}
+
+.nav-link:hover {
+  color: var(--textHoverColor);
+}
+
+.resume-link {
+  color: var(--highlightColor);
+  border: 2px solid var(--highlightColor);
+  border-radius: 5px;
+}
+
+.resume-link:hover {
+  background-color: var(--highlightHoverColor);
+}
+/*#endregion Navbar*/
+
+/*#region Text*/
+h1.headerText {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  font-size: 72px;
+  color: var(--textColor2);
+  opacity: 0;
+  animation: fadeFromLeft 1s 300ms forwards;
+}
+
+h1 {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  font-size: 72px;
+  color: var(--textColor2);
+}
+
+h5 {
+  font-family: "Inconsolata", monospace;
+  font-size: 38px;
+  color: var(--textColor1);
+}
+
+h6.headerText {
+  font-family: "Inconsolata", monospace;
+  font-size: 28px;
+  color: var(--textColor1);
+  opacity: 0;
+  animation: fadeFromLeft 1s forwards;
+}
+
+h6 {
+  font-family: "Inconsolata", monospace;
+  font-size: 28px;
+  color: var(--textColor1);
+  opacity: 0;
+}
+
+p.headerText {
+  font-family: "Inconsolata", monospace;
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--textColor2);
+  opacity: 0;
+  animation: fadeFromLeft 1s 500ms forwards;
+}
+
+p {
+  font-family: "Inconsolata", monospace;
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--textColor2);
+  opacity: 0;
+}
+
+.fadeInLeft {
+  opacity: 0;
+  animation: fadeFromLeft 1s forwards;
+}
+
+.fadeInRight {
+  opacity: 0;
+  animation: fadeFromRight 1s forwards;
+}
+/*#endregion Text*/
+
+/*#region Cards*/
+.card {
+  background-color: var(--backgroundColor);
+  border: 3px solid var(--highlightHoverColor);
+  box-shadow: 5px 5px var(--cardColor);
+}
+
+.card-title {
+  color: var(--textColor1);
+}
+
+.btn-primary {
+  background-color: var(--highlightColor);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--highlightHoverColor);
+}
+
+.card-icon {
+  font-size: 28px;
+  color: var(--highlightColor);
+}
+
+.card-icon:hover {
+  color: var(--highlightHoverColor);
+  transition: 0.3s;
+}
+
+.row {
+  opacity: 0;
+  margin-bottom: 30px;
+}
+/*#endregion Cards*/
+
+section {
+  height: 100vh;
+  padding-left: 20%;
+  padding-right: 10%;
+}
+
+.profile-image {
+  margin-left: 5%;
+  border: 8px solid var(--highlightColor);
+  box-shadow: 10px 10px var(--cardColor);
+  opacity: 0;
+}
+
+.wentworth-image {
+  margin-right: 5%;
+  border: 8px solid var(--highlightColor);
+  box-shadow: 10px 10px var(--cardColor);
+  opacity: 0;
+}
+
+@media (hover: hover) {
+  .navbar {
+    box-shadow: var(--highlightColor);
+    padding: 1% 10% 1% 5%;
+  }
+
+  .nav-item {
+    margin-right: 10%;
+  }
+
+  section {
+    margin-right: 10vw;
+  }
+
+  #header-section {
+    margin-top: 30vh;
+  }
+}
+
+@media (hover: none) {
+  /* phones */
+  #header-section {
+    display: none;
+  }
+
+  section {
+    padding: 10px;
+  }
+
+  .links {
+    display: none;
+  }
+
+  img {
+    display: none;
+  }
+}
+
+.fade-in {
+  color: white;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-3%);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(3%);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
