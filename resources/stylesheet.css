@@ -172,6 +172,10 @@ p {
   opacity: 0;
 }
 
+.shown {
+  opacity: 100;
+}
+
 .fadeInLeft {
   opacity: 0;
   animation: fadeFromLeft 1s forwards;
@@ -239,10 +243,18 @@ section {
   opacity: 0;
 }
 
+.duggan-image {
+  margin-left: 25%;
+  border: 8px solid var(--highlightColor);
+  box-shadow: 10px 10px var(--cardColor);
+  opacity: 0;
+}
+
 @media (hover: hover) {
   .navbar {
     box-shadow: var(--highlightColor);
     padding: 1% 10% 1% 5%;
+    margin-right: 100px;
   }
 
   .nav-item {
@@ -256,23 +268,34 @@ section {
   #header-section {
     margin-top: 30vh;
   }
+
+  .mobile-header-image, .mobile-header-text {
+    display: none;
+  }
 }
 
 @media (hover: none) {
   /* phones */
-  #header-section {
+  #header-info {
     display: none;
   }
 
   section {
     padding: 10px;
+    animation: none;
   }
 
-  .links {
+  .mobile-header-image {
+    margin-top: 80%;
+    border: 8px solid var(--highlightColor);
+    box-shadow: 10px 10px var(--cardColor);
+  }
+
+  .links, .links-right {
     display: none;
   }
 
-  img {
+  .profile-image, .wentworth-image, .duggan-image {
     display: none;
   }
 }

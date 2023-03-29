@@ -22,10 +22,10 @@ window.addEventListener("scroll", (e) => {
     profileImage.classList.add("fadeInRight");
   }
 
-  //Experience section
-  const experienceHeader = document.querySelector("#experience-header");
-  if (isInViewport(experienceHeader)) {
-    experienceHeader.classList.add("fadeInRight");
+  //Education section
+  const educationHeader = document.querySelector("#education-header");
+  if (isInViewport(educationHeader)) {
+    educationHeader.classList.add("fadeInRight");
   }
 
   const school1Header = document.querySelector("#schoolText1");
@@ -46,6 +46,32 @@ window.addEventListener("scroll", (e) => {
   const wentworthImage = document.querySelector(".wentworth-image");
   if (isInViewport(wentworthImage)) {
     wentworthImage.classList.add("fadeInLeft");
+  }
+
+  //Experience section
+  const experienceHeader = document.querySelector("#experience-header");
+  if (isInViewport(experienceHeader)) {
+    experienceHeader.classList.add("fadeInLeft");
+  }
+
+  const experience1Header = document.querySelector("#experienceText1");
+  if (isInViewport(experience1Header)) {
+    experience1Header.classList.add("fadeInLeft");
+  }
+
+  const experience2Header = document.querySelector("#experienceText2");
+  if (isInViewport(experience2Header)) {
+    experience2Header.classList.add("fadeInLeft");
+  }
+
+  const experience3Header = document.querySelector("#experienceText3");
+  if (isInViewport(experience3Header)) {
+    experience3Header.classList.add("fadeInLeft");
+  }
+
+  const dugganImage = document.querySelector(".duggan-image");
+  if (isInViewport(dugganImage)) {
+    dugganImage.classList.add("fadeInRight");
   }
 
   //Project section
