@@ -223,8 +223,18 @@ p {
 }
 /*#endregion Cards*/
 
-section {
+#about-section,
+#project-section,
+#experience-section,
+#education-section,
+#header-section {
   height: 100vh;
+  padding-left: 20%;
+  padding-right: 10%;
+}
+
+#contact-section,
+#footer-section {
   padding-left: 20%;
   padding-right: 10%;
 }
@@ -269,7 +279,8 @@ section {
     margin-top: 30vh;
   }
 
-  .mobile-header-image, .mobile-header-text {
+  .mobile-header-image,
+  .mobile-header-text {
     display: none;
   }
 }
@@ -291,11 +302,14 @@ section {
     box-shadow: 10px 10px var(--cardColor);
   }
 
-  .links, .links-right {
+  .links,
+  .links-right {
     display: none;
   }
 
-  .profile-image, .wentworth-image, .duggan-image {
+  .profile-image,
+  .wentworth-image,
+  .duggan-image {
     display: none;
   }
 }
