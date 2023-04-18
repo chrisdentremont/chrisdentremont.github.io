@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700&family=Noto+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 
 :root {
-  --textColor1: #35af9f;
-  --textColor2: #c2dfe3;
-  --textHoverColor: #e0fbfc;
-  --highlightColor: #3a928e;
-  --highlightHoverColor: #2c7773;
-  --cardColor: #224763;
-  --backgroundColor: #062136;
+  --textColor1: #FFFFFF;
+  --textColor2: #FFFFFF;
+  --textHoverColor: #c3b75d;
+  --highlightColor: #FFFFFF;
+  --highlightHoverColor: #FFFFFF;
+  --cardColor: #FFFFFF;
+  --backgroundColor: #FFFFFF;
 }
 
 /*#region Scrollbar */
@@ -79,6 +79,17 @@ body {
   cursor: pointer;
   color: var(--highlightHoverColor);
   transform: translateX(-20%);
+}
+
+#colorButton {
+  color: var(--textColor1);
+  background-color: var(--backgroundColor);
+  border: none;
+}
+
+#colorButton:hover {
+  transition: 0.3s;
+  color: var(--textColor2);
 }
 
 /*#region Navbar*/

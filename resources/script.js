@@ -1,3 +1,27 @@
+const root = document.querySelector(":root");
+
+const variables = ["--textColor1", "--textColor2", "--textHoverColor", "--highlightColor", "--highlightHoverColor", "--cardColor", "--backgroundColor"];
+const colorSets = [["#35af9f", "#c2dfe3", "#e0fbfc", "#3a928e", "#2c7773", "#224763", "#062136"], ["#E3D888", "#E3D888", "#c3b75d", "#E3D888", "#5b5634", "#b5aa57", "#31231E"], ["#AAAE7F", "#D0D6B3", '#E3D888', "#AAAE7F", '#484d10', '#484d10', '#16330c']];
+
+let random = Math.floor(Math.random() * 3);
+setColor(false);
+
+function setColor(increment){
+  if(increment){
+    if(random == 2){
+      random = 0;
+    }else{
+      random++;
+    }
+    console.log(random);
+  }
+
+  for(let i = 0; i < variables.length; i++){
+    root.style.setProperty(variables[i], colorSets[random][i]);
+  }
+}
+
+
 window.addEventListener("scroll", (e) => {
   const nav = document.querySelector(".navbar");
   if (window.pageYOffset > 200) {
