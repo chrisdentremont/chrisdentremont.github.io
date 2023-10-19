@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700&family=Noto+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 
 :root {
-  --textColor1: #FFFFFF;
-  --textColor2: #FFFFFF;
+  --textColor1: #ffffff;
+  --textColor2: #ffffff;
   --textHoverColor: #c3b75d;
-  --highlightColor: #FFFFFF;
-  --highlightHoverColor: #FFFFFF;
-  --cardColor: #FFFFFF;
-  --backgroundColor: #FFFFFF;
+  --highlightColor: #ffffff;
+  --highlightHoverColor: #ffffff;
+  --cardColor: #ffffff;
+  --backgroundColor: #ffffff;
 }
 
 /*#region Scrollbar */
@@ -96,10 +96,6 @@ body {
 
 .navbar {
   background-color: var(--backgroundColor);
-}
-
-.navbar-shadow {
-  box-shadow: var(--highlightColor) 0px 1px 2px 0px;
 }
 
 .nav-link:link {
@@ -275,11 +271,10 @@ p {
   .navbar {
     box-shadow: var(--highlightColor);
     padding: 1% 10% 1% 5%;
-    margin-right: 100px;
   }
 
   .nav-item {
-    margin-right: 10%;
+    margin-left: 2%;
   }
 
   section {

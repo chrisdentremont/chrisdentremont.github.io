@@ -18,25 +18,28 @@
 
   <body>
     <nav class="navbar fixed-top navbar-expand-md">
-      <button class="navbar-brand" id="colorButton" onclick="setColor(true)"><i class="bi bi-palette-fill"></i></button>
-      <div class="navbar-collapse">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#about-section">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#education-section">Education</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#experience-section">Experience</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#project-section">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a href="resources/resume.pdf" target="_blank" class="nav-link resume-link">Resume</a>
-          </li>
-        </ul>
+      <div class="container-fluid">
+        <button class="navbar-brand" id="colorButton" onclick="setColor(true)"><i
+            class="bi bi-palette-fill"></i></button>
+        <div class="navbar-collapse collapse" id="nav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about-section">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education-section">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience-section">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#project-section">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="resources/resume.pdf" target="_blank" class="nav-link resume-link">Resume</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
@@ -139,7 +142,7 @@
           Projects
         </h6>
         <div class="row" id="projectRow1">
-          <div class="col-sm-4">
+          <div class="col-md">
             <div class="card text-center">
               <div class="card-body">
                 <h5 class="card-title">AppliTrack</h5>
@@ -152,7 +155,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-4">
+          <div class="col-md">
             <div class="card text-center">
               <div class="card-body">
                 <h5 class="card-title">Online Trivia Game</h5>
@@ -164,7 +167,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-4">
+          <div class="col-md">
             <div class="card text-center">
               <div class="card-body">
                 <h5 class="card-title">Plastic Pollution Predictor</h5>
@@ -178,7 +181,7 @@
           </div>
         </div>
         <div class="row" id="projectRow2">
-          <div class="col-sm-4">
+          <div class="col-md">
             <div class="card text-center">
               <div class="card-body">
                 <h5 class="card-title">Bloomfer Brawl</h5>
@@ -189,7 +192,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-4">
+          <div class="col-md">
             <div class="card text-center">
               <div class="card-body">
                 <h5 class="card-title">Speed Pong</h5>
