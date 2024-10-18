@@ -8,6 +8,7 @@
   --highlightHoverColor: #ffffff;
   --cardColor: #ffffff;
   --backgroundColor: #ffffff;
+  --backgroundColorDark: #ffffff;
 }
 
 /*#region Scrollbar */
@@ -30,6 +31,17 @@
 
 body {
   background-color: var(--backgroundColor);
+}
+
+main {
+  position: absolute;
+  top: 75px;
+  bottom: 0;
+  overflow-y: scroll;
+}
+
+p {
+  color: var(--textColor1);
 }
 
 .links {
@@ -81,9 +93,19 @@ body {
   transform: translateX(-20%);
 }
 
+.boxed-link {
+  color: var(--highlightColor);
+  border: 2px solid var(--highlightColor);
+  border-radius: 5px;
+}
+
+.boxed-link:hover {
+  background-color: var(--highlightHoverColor);
+}
+
 #colorButton {
   color: var(--textColor1);
-  background-color: var(--backgroundColor);
+  background-color: var(--backgroundColorDark);
   border: none;
 }
 
@@ -95,7 +117,14 @@ body {
 /*#region Navbar*/
 
 .navbar {
-  background-color: var(--backgroundColor);
+  background-color: var(--backgroundColorDark);
+  height: 75px;
+}
+
+.nav-link {
+  text-decoration: underline 2px rgba(255, 255, 255, 0);
+  text-underline-offset: 4px;
+  transition: text-decoration-color 300ms, text-underline-offset 300ms;
 }
 
 .nav-link:link {
@@ -110,22 +139,14 @@ body {
 }
 
 .nav-link:hover {
+  text-decoration-color: rgba(255, 255, 255, 1);
+  text-underline-offset: 6px;
   color: var(--textHoverColor);
-}
-
-.resume-link {
-  color: var(--highlightColor);
-  border: 2px solid var(--highlightColor);
-  border-radius: 5px;
-}
-
-.resume-link:hover {
-  background-color: var(--highlightHoverColor);
 }
 /*#endregion Navbar*/
 
 /*#region Text*/
-h1.headerText {
+h1.introText {
   font-family: "Noto Sans", sans-serif;
   font-weight: bold;
   font-size: 72px;
@@ -141,13 +162,19 @@ h1 {
   color: var(--textColor2);
 }
 
+h4 {
+  font-family: "Inconsolata", monospace;
+  font-weight: bolder;
+  color: var(--textColor1);
+}
+
 h5 {
   font-family: "Inconsolata", monospace;
   font-size: 38px;
   color: var(--textColor1);
 }
 
-h6.headerText {
+h6.introText {
   font-family: "Inconsolata", monospace;
   font-size: 28px;
   color: var(--textColor1);
@@ -162,7 +189,7 @@ h6 {
   opacity: 0;
 }
 
-p.headerText {
+p.introText {
   font-family: "Inconsolata", monospace;
   font-weight: bold;
   font-size: 20px;
@@ -173,10 +200,18 @@ p.headerText {
 
 p {
   font-family: "Inconsolata", monospace;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 18px;
   color: var(--textColor2);
   opacity: 0;
+}
+
+p.header-text {
+  font-weight: bold;
+}
+
+.card-body p {
+  font-weight: bold;
 }
 
 .shown {
@@ -196,13 +231,43 @@ p {
 
 /*#region Cards*/
 .card {
-  background-color: var(--backgroundColor);
-  border: 3px solid var(--highlightHoverColor);
-  box-shadow: 5px 5px var(--cardColor);
+  background-color: var(--cardColor);
+  box-shadow: 5px 5px var(--backgroundColorDark);
+  flex: 1 0 30%;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .card-title {
   color: var(--textColor1);
+}
+
+.card-header {
+  color: var(--textColor1);
+}
+
+.card-icon i {
+  color: var(--textColor1);
+  transition: 0.3s;
+}
+
+.card-icon:hover i {
+  color: var(--textColor2);
+}
+
+.card-footer {
+  background-color: var(--backgroundColor);
+}
+
+.badge {
+  color: var(--textColor2);
 }
 
 .btn-primary {
@@ -223,11 +288,6 @@ p {
   color: var(--highlightHoverColor);
   transition: 0.3s;
 }
-
-.row {
-  opacity: 0;
-  margin-bottom: 30px;
-}
 /*#endregion Cards*/
 
 #about-section,
@@ -235,7 +295,7 @@ p {
 #experience-section,
 #education-section,
 #header-section {
-  height: 100vh;
+  height: 80vh;
   padding-left: 20%;
   padding-right: 10%;
 }
