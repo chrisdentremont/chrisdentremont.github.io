@@ -40,10 +40,6 @@ main {
   overflow-y: scroll;
 }
 
-p {
-  color: var(--textColor1);
-}
-
 .links {
   position: fixed;
   bottom: 0;
