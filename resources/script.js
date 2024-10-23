@@ -63,89 +63,21 @@ function setColor(increment) {
 window.addEventListener(
   "scroll",
   (e) => {
-    //About section
-    const aboutHeader = document.querySelector("#about-header");
-    if (isInViewport(aboutHeader)) {
-      aboutHeader.classList.add("fadeInLeft");
-    }
+    const fadeInLefts = document.querySelectorAll(".fade-in-left");
 
-    const aboutText = document.querySelector("#about-text");
-    if (isInViewport(aboutText)) {
-      aboutText.classList.add("fadeInLeft");
-    }
+    fadeInLefts.forEach((e) => {
+      if (isInViewport(e)) {
+        e.classList.add("fadeInLeft");
+      }
+    });
 
-    const profileImage = document.querySelector(".profile-image");
-    if (isInViewport(profileImage)) {
-      profileImage.classList.add("fadeInRight");
-    }
+    const fadeInRights = document.querySelectorAll(".fade-in-right");
 
-    //Education section
-    const educationHeader = document.querySelector("#education-header");
-    if (isInViewport(educationHeader)) {
-      educationHeader.classList.add("fadeInRight");
-    }
-
-    const school1Header = document.querySelector("#schoolText1");
-    if (isInViewport(school1Header)) {
-      school1Header.classList.add("fadeInRight");
-    }
-
-    const school2Header = document.querySelector("#schoolText2");
-    if (isInViewport(school2Header)) {
-      school2Header.classList.add("fadeInRight");
-    }
-
-    const school3Header = document.querySelector("#schoolText3");
-    if (isInViewport(school3Header)) {
-      school3Header.classList.add("fadeInRight");
-    }
-
-    const wentworthImage = document.querySelector(".wentworth-image");
-    if (isInViewport(wentworthImage)) {
-      wentworthImage.classList.add("fadeInLeft");
-    }
-
-    //Experience section
-    const experienceHeader = document.querySelector("#experience-header");
-    if (isInViewport(experienceHeader)) {
-      experienceHeader.classList.add("fadeInLeft");
-    }
-
-    const experience1Header = document.querySelector("#experienceText1");
-    if (isInViewport(experience1Header)) {
-      experience1Header.classList.add("fadeInLeft");
-    }
-
-    const experience2Header = document.querySelector("#experienceText2");
-    if (isInViewport(experience2Header)) {
-      experience2Header.classList.add("fadeInLeft");
-    }
-
-    const experience3Header = document.querySelector("#experienceText3");
-    if (isInViewport(experience3Header)) {
-      experience3Header.classList.add("fadeInLeft");
-    }
-
-    const dugganImage = document.querySelector(".duggan-image");
-    if (isInViewport(dugganImage)) {
-      dugganImage.classList.add("fadeInRight");
-    }
-
-    //Project section
-    const projectHeader = document.querySelector("#project-header");
-    if (isInViewport(projectHeader)) {
-      projectHeader.classList.add("fadeInLeft");
-    }
-
-    const projectRow1 = document.querySelector("#projectRow1");
-    if (isInViewport(projectRow1)) {
-      projectRow1.classList.add("fadeInLeft");
-    }
-
-    const projectRow2 = document.querySelector("#projectRow2");
-    if (isInViewport(projectRow2)) {
-      projectRow2.classList.add("fadeInLeft");
-    }
+    fadeInRights.forEach((e) => {
+      if (isInViewport(e)) {
+        e.classList.add("fadeInRight");
+      }
+    });
   },
   true
 );
